@@ -2392,6 +2392,122 @@ header .time-now.weather-day .news-area > span {
   line-height: 20px;
 }
 
+/* Spotlight Section */
+.spotlight__section {
+  overflow: hidden;
+}
+
+.spotlight__section:before {
+  width: calc(100% - 30px);
+  background: #e5e5e5;
+  height: 1px;
+  position: absolute;
+  top: 0;
+  left: 15px;
+  content: "";
+}
+
+.spotlight__left {
+  width: 740px;
+  position: relative;
+  padding-right: 20px;
+  overflow: hidden;
+}
+
+.spotlight__left:after {
+  content: "";
+  width: 1px;
+  height: 100%;
+  background: #e5e5e5;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.spotlight__right {
+}
+
+.spotlight__left .one__sec {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.spotlight__txt {
+  font-size: 18px;
+}
+
+.one__sec .title-news {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
+.one__sec .meta-news {
+  margin-top: 30px;
+}
+
+.spotlight__arc {
+  width: 460px;
+  float: left;
+  margin-right: 20px;
+}
+
+.second__sec {
+  overflow: hidden;
+}
+
+.second__sec .item-news {
+  width: 50%;
+}
+
+.second__sec .item-news:nth-child(odd) {
+  padding-right: 10px;
+}
+
+.second__sec .item-news:nth-child(even) {
+  padding-left: 10px;
+}
+
+.viewest__list {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.viewest__list .title-news {
+  margin-bottom: 0px;
+  margin-left: 20px;
+}
+
+.viewest__list .item-news {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  width: 50%;
+}
+
+.viewest__list:before {
+  content: "";
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 47%;
+  background: #e5e5e5;
+}
+
+.viewest__list .number__viewest {
+  font-size: 48px;
+  font-family: "Merriweather", serif;
+  color: #222;
+  font-weight: bold;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
 /* Animation */
 @keyframes fadeInUp {
   0% {
